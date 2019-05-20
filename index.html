@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<!--Le damos nombre a la pagina-->
+	<title>
+		Formulario::Post
+	</title>
+	<!--Los caracteres mostrados seran en formato UTF-8-->
+	<meta charset="utf-8">
+</head>
+
+<body>
+	<!--form es la etiqueta del formulario
+		action hacia donde dirigiremos las variables
+		method el metodo que utilizaresmos-->
+	<form action="captura.php" method="POST">
+		<!--cremamos los campos de caputura  Required es que esos campos son obligatorios-->
+		Nombre :<input type="text" id="nombre" name="nombre" required><br/><br/>
+		Correo :<input type="mail" id="mail" name="mail" required><br/><br/>
+		Edad :<input type="text" id="edad" name="edad" ><br/><br/>
+		<!--este campo type password nos oculta los caracteres en forma de contraseña-->
+		Contraseña :<input type="password" id="contra" name="contra" required><br/><br/>
+		<!--submit crea el boton para enviar nuestro formulario-->
+		<input type="submit">
+	</form>
+</body>
+
+</html>
